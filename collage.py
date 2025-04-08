@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 image_paths = []
-images = [Image.open(image).convert("RGBA") for image in image_paths]  # Convert images to RGBA mode for transparency
+images = [Image.open(image).convert("RGBA") for image in image_paths]
 image_width, image_height = images[0].size
 
 collage_width = image_width * 5
